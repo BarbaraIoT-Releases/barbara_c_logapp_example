@@ -1,0 +1,8 @@
+services:
+  native_builder:
+    # Possible values: linux/amd64, linux/arm64, linux/arm/v7
+    platform: linux/amd64
+    container_name: native_builder
+    build: .
+    volumes:
+      - ./output:/output
